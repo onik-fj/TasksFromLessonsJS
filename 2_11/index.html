@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      alert(null || 2 || undefined); // 2
+
+      alert(alert(1) || 2 || alert(3)); // 1 потом 2 , так как 2 истинное значение то на этом остановится
+
+      alert(1 && null && 2); // null
+
+      alert(alert(1) && alert(2)); // 1 после undefined
+
+      //Напишите условие if для проверки, что переменная age находится в диапазоне между 14 и 90 включительно.
+      if (age >= 14 && age <= 90);
+      // Напишите условие if для проверки, что значение переменной age НЕ находится в диапазоне 14 и 90 включительно. первый с использованием оператора НЕ !, второй – без этого оператора.
+      if (!(age >= 14 && age <= 90));
+      if (age < 14 || age > 90);
+
+      if (-1 || 0) alert("first"); // выполнится
+      if (-1 && 0) alert("second"); // не выполнится -1 && 0 - вернет 0, а это false
+      if (null || (-1 && 1)) alert("third"); //выполнится (null || 1) вернет 1 - true
+    </script>
+    <script>
+      // Если введён пароль «Я главный», то выводить «Здравствуйте!»,
+      // Иначе – «Неверный пароль»,
+      // При отмене – «Отменено».
+      let userName = prompt("Кто там?", "");
+
+      if (userName == "Админ") {
+        let password = prompt("Пароль?", "");
+
+        if (password == "Я главный") {
+          alert("Здравствуйте!");
+        } else if (password == "" || password == null) {
+          alert("Отменено");
+        } else {
+          alert("Неверный пароль");
+        }
+      } else if (userName == "" || userName == null) {
+        alert("Отменено");
+      } else {
+        alert("Я вас не знаю");
+      }
+    </script>
+  </body>
+</html>

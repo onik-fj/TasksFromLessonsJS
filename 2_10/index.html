@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    //1 задание
+    <script>
+      if ("0") {
+        alert("Привет"); // Так как "0" - значение в строке есть(символ), то получаем true, выполняется код alert("Привет");    В модалке видим "Привет".
+      }
+    </script>
+    //2 задание
+    <script>
+      let value = prompt('What is the "официальное название" JavaScript??', "");
+
+      if (value == "ECMAScript") {
+        alert("Верно!");
+      } else {
+        alert("Не знаете? ECMAScript!");
+      }
+    </script>
+    //3 задание
+    <script>
+      let value = prompt("Введите число", "");
+
+      if (value > 1) {
+        alert("Значение больше единицы");
+      } else if (value == 0) {
+        alert("Значение равно нулю");
+      } else {
+        alert("Значение меньше единицы");
+      }
+    </script>
+    //4 задание
+    <script>
+      let result;
+
+      a + b < 4 ? (result = "Мало") : (result = "Много");
+    </script>
+    //5 задание
+    <script>
+      let message =
+        login == "Сотрудник"
+          ? "Привет"
+          : login == "Директор"
+          ? "Здравствуйте"
+          : login == ""
+          ? "Нет логина"
+          : "";
+    </script>
+  </body>
+</html>
+
